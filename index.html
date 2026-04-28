@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Front Door – Request Triage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Team Front Door – Request Triage</h1>
+
+        <form id="triageForm">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" required>
+
+            <label for="type">Request Type</label>
+            <select id="type" required>
+                <option value="">Select a request type</option>
+                <option value="Incident">Incident</option>
+                <option value="Service Request">Service Request</option>
+                <option value="Access Request">Access Request</option>
+                <option value="General Query">General Query</option>
+            </select>
+
+            <label for="details">Details</label>
+            <textarea id="details" rows="4" required></textarea>
+
+            <button type="submit">Submit Request</button>
+        </form>
+
+        <div id="confirmation" class="hidden">
+            <h2>Request Submitted</h2>
+            <p>Thank you. Your request has been triaged and logged.</p>
+            <button id="newRequest">Submit Another Request</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
