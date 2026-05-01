@@ -16,10 +16,10 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Upload artifact
+      - name: Upload static site files
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./
+          path: .  # Upload ONLY the site files
 
   deploy:
     needs: build
@@ -31,3 +31,4 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
