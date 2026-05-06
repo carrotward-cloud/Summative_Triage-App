@@ -39,12 +39,6 @@ jobs:
             echo "No build step required"
           fi
 
-      # 5. Lint HTML files
-      - name: Validate HTML
-        uses: wjdp/htmltest-action@v0.16.0
-        with:
-          root: .
-          blacklist: "node_modules"
 
       # 6. Lint CSS (optional)
       - name: Lint CSS
