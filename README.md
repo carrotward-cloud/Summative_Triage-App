@@ -15,4 +15,4 @@ This includes:
 - CD workflow: deploys the static site to GitHub Pages
 
 ## Live Site
-(You will add your GitHub Pages URL here after Video 10)
+https://carrotward-cloud.github.io/Summative_Triage-App/
