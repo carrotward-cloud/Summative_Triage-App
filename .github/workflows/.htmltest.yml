@@ -1,0 +1,4 @@
+DirectoryPath: .
+IgnoreURLs:
+  - https://
+  - http://
