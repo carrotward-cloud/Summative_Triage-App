@@ -41,7 +41,7 @@ jobs:
 
       # 5. Lint HTML files
       - name: Validate HTML
-        uses: Cyb3r-Jak3/html5validator-action@v1.0.0
+        uses: wjdp/htmltest-action@v0.16.0
         with:
           root: .
           blacklist: "node_modules"
